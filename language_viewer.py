@@ -126,6 +126,7 @@ class LanguageViewerApp:
 
 class VariantSelectionWindow:
     def __init__(self, parent, data, selected_langs):
+        self.parent = parent
         self.data = data
         self.selected_langs = selected_langs
 
@@ -149,11 +150,11 @@ class VariantSelectionWindow:
         info_label = tk.Label(self.top, text="Select variants for each language:")
         info_label.pack(padx=10, pady=10)
 
-        # If no multi-variant languages, save immediately and close
+        # If no multi-variant languages, save immediately and exit
         if not self.multi_variant_langs:
             self.save_selection()
             messagebox.showinfo("Done", "All selected languages had only one variant. Selection saved.")
-            self.top.destroy()
+            self.end_application()
             return
 
         # Scrollable frame for multi-variants
@@ -198,7 +199,7 @@ class VariantSelectionWindow:
         button_frame = tk.Frame(self.top)
         button_frame.pack(pady=10, anchor="e")
 
-        save_button = tk.Button(button_frame, text="Save", command=self.save_selection)
+        save_button = tk.Button(button_frame, text="Save", command=self.save_and_end)
         save_button.pack(side="left", padx=(0,5))
 
         confirm_button = tk.Button(button_frame, text="Confirm", command=self.confirm_selection)
@@ -208,8 +209,13 @@ class VariantSelectionWindow:
         self.canvas.configure(scrollregion=self.canvas.bbox("all"))
 
     def confirm_selection(self):
-        # Just close after confirming
+        # Just close after confirming without saving
         self.top.destroy()
+
+    def save_and_end(self):
+        # Save and then end the entire application
+        self.save_selection()
+        self.end_application()
 
     def save_selection(self):
         # Gather selected variants from multi-variant languages
@@ -230,6 +236,11 @@ class VariantSelectionWindow:
             json.dump(final_selection, f, ensure_ascii=False, indent=4)
 
         messagebox.showinfo("Saved", f"Selected variants saved to {save_path}")
+
+    def end_application(self):
+        # Destroy the variant selection window and the main app window
+        self.top.destroy()
+        self.parent.destroy()
 
 
 def launch_ui():
