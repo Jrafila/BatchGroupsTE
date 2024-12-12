@@ -22,9 +22,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller
+        pip install -r requirements.txt  # Install any additional dependencies if you have
+
+    - name: Run Scripts (Main Runner)
+      run: |
+        python main_runner.py  # This runs your orchestrating script that handles the logic
 
     - name: Build Executable
-      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json;." test.py
+      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json;." --add-data "language_viewer.py;." main_runner.py
+      # The `--add-data` option ensures language_viewer.py and languages.json are bundled
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
