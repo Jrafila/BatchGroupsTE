@@ -1,0 +1,1166 @@
+{
+    "Afar": {
+        "(Ethiopia)": "aa-ET",
+        "(Djibouti)": "aa-DJ",
+        "(Eritrea)": "aa-ER"
+    },
+    "Afrikaans": {
+        "(South Africa)": "af-ZA",
+        "(Namibia)": "af-NA"
+    },
+    "Aghem": {
+        "(Cameroon)": "agq-CM"
+    },
+    "Akan": {
+        "(Ghana)": "ak-GH"
+    },
+    "Albanian": {
+        "(Albania)": "sq-AL",
+        "(Macedonia - FYRO)": "sq-MK",
+        "(Kosovo)": "sq-XK"
+    },
+    "Swiss German (Alsatian)": {
+        "(Switzerland)": "gsw-CH",
+        "(France)": "gsw-FR",
+        "(Liechtenstein)": "gsw-LI"
+    },
+    "Amharic": {
+        "(Ethiopia)": "am-ET"
+    },
+    "Arabic": {
+        "(Saudi Arabia)": "ar-SA",
+        "(World)": "ar-001",
+        "(United Arab Emirates)": "ar-AE",
+        "(Bahrain)": "ar-BH",
+        "(Djibouti)": "ar-DJ",
+        "(Algeria)": "ar-DZ",
+        "(Egypt)": "ar-EG",
+        "(Eritrea)": "ar-ER",
+        "(Israel)": "ar-IL",
+        "(Iraq)": "ar-IQ",
+        "(Jordan)": "ar-JO",
+        "(Comoros)": "ar-KM",
+        "(Kuwait)": "ar-KW",
+        "(Lebanon)": "ar-LB",
+        "(Libya)": "ar-LY",
+        "(Morocco)": "ar-MA",
+        "(Mauritania)": "ar-MR",
+        "(Oman)": "ar-OM",
+        "(Palestinian Authority)": "ar-PS",
+        "(Qatar)": "ar-QA",
+        "(Sudan)": "ar-SD",
+        "(Somalia)": "ar-SO",
+        "(South Sudan)": "ar-SS",
+        "(Syria)": "ar-SY",
+        "(Chad)": "ar-TD",
+        "(Tunisia)": "ar-TN",
+        "(Yemen)": "ar-YE"
+    },
+    "Armenian": {
+        "(Armenia)": "hy-AM"
+    },
+    "Assamese": {
+        "(India)": "as-IN"
+    },
+    "Asu": {
+        "(Tanzania)": "asa-TZ"
+    },
+    "Asturian": {
+        "(Spain)": "ast-ES"
+    },
+    "Azerbaijani": {
+        "(Latin, Azerbaijan)": "az-Latn-AZ",
+        "(Latin)": "az-Latn",
+        "(Cyrillic)": "az-Cyrl",
+        "(Cyrillic, Azerbaijan)": "az-Cyrl-AZ"
+    },
+    "Aymara": {
+        "": "quz-x-ay-SDL"
+    },
+    "Bafia": {
+        "(Cameroon)": "ksf-CM"
+    },
+    "Bamanankan": {
+        "(Latin Mali)": "bm-Latn-ML"
+    },
+    "Basaa": {
+        "(Cameroon)": "bas-CM"
+    },
+    "Bashkir": {
+        "(Russia)": "ba-RU"
+    },
+    "Basque": {
+        "(Basque)": "eu-ES"
+    },
+    "Belarusian": {
+        "(Belarus)": "be-BY"
+    },
+    "Bemba": {
+        "(Zambia)": "bem-ZM"
+    },
+    "Bena": {
+        "(Tanzania)": "bez-TZ"
+    },
+    "Bangla": {
+        "(Bangladesh)": "bn-BD",
+        "(India)": "bn-IN"
+    },
+    "Bihari": {
+        "": "hi-x-bh-SDL"
+    },
+    "Bislama": {
+        "": "en-x-bi-SDL"
+    },
+    "Blin": {
+        "(Eritrea)": "byn-ER"
+    },
+    "Bodo": {
+        "(India)": "brx-IN"
+    },
+    "Bosnian": {
+        "(Latin, Bosnia & Herzegovina)": "bs-Latn-BA",
+        "(Cyrillic)": "bs-Cyrl",
+        "(Cyrillic, Bosnia and Herzegovina)": "bs-Cyrl-BA",
+        "(Latin)": "bs-Latn"
+    },
+    "Breton": {
+        "(France)": "br-FR"
+    },
+    "Bulgarian": {
+        "(Bulgaria)": "bg-BG"
+    },
+    "Burmese": {
+        "(Myanmar)": "my-MM"
+    },
+    "Catalan": {
+        "(Andorra)": "ca-AD",
+        "(Catalan)": "ca-ES",
+        "(France)": "ca-FR",
+        "(Italy)": "ca-IT"
+    },
+    "Valencian": {
+        "(Spain)": "ca-ES-valencia"
+    },
+    "Cebuano": {
+        "": "ceb",
+        "(Philippines)": "ceb-PH"
+    },
+    "Central Kurdish": {
+        "(Iraq)": "ckb-IQ",
+        "(Iran)": "ckb-IR"
+    },
+    "Kurdish": {
+        "(Perso-Arabic Iran)": "ku-Arab-IR"
+    },
+    "Chechen": {
+        "": "ce-RU"
+    },
+    "Cherokee": {
+        "": "chr-Cher"
+    },
+    "Cheva": {
+        "": "sw-x-my-SDL"
+    },
+    "Chiga": {
+        "(Uganda)": "cgg-UG"
+    },
+    "Chinese": {
+        "(Simplified, China)": "zh-CN",
+        "(Simplified)": "zh-Hans",
+        "(Simplified, Han Hong Kong SAR)": "zh-Hans-HK",
+        "(Simplified, Han Macao SAR)": "zh-Hans-MO",
+        "(Traditional, Hong Kong SAR)": "zh-HK",
+        "(Traditional, Macao SAR)": "zh-MO",
+        "(Simplified, Singapore)": "zh-SG",
+        "(Traditional, Taiwan)": "zh-TW",
+        "(Simplified, Legacy) (deprecated)": "zh-CHS",
+        "(Traditional, Legacy) (deprecated)": "zh-CHT"
+    },
+    "Church Slavic": {
+        "": "cu-RU"
+    },
+    "Colognian": {
+        "(Germany)": "ksh-DE"
+    },
+    "Cornish": {
+        "(United Kingdom)": "kw-GB"
+    },
+    "Corsican": {
+        "(France)": "co-FR"
+    },
+    "Croatian": {
+        "(Croatia)": "hr-HR",
+        "(Bosnia & Herzegovina)": "hr-BA"
+    },
+    "Czech": {
+        "(Czechia)": "cs-CZ"
+    },
+    "Danish": {
+        "(Denmark)": "da-DK",
+        "(Greenland)": "da-GL"
+    },
+    "Dari": {
+        "(Afghanistan)": "prs-AF"
+    },
+    "Duala": {
+        "(Cameroon)": "dua-CM"
+    },
+    "Dihevi": {
+        "(Maldives)": "dv-MV"
+    },
+    "Dogri": {
+        "": "doi",
+        "(India)": "doi-IN"
+    },
+    "Dutch": {
+        "(Netherlands)": "nl-NL",
+        "(Belgium)": "nl-BE",
+        "(Aruba)": "nl-AW",
+        "(Bonaire Sint Eustatius and Saba)": "nl-BQ",
+        "(Curaçao)": "nl-CW",
+        "(Suriname)": "nl-SR",
+        "(Sint Maarten)": "nl-SX"
+    },
+    "Dzongkha": {
+        "(Bhutan)": "dz-BT"
+    },
+    "Edo": {
+        "(Nigeria)": "bin-NG"
+    },
+    "Embu": {
+        "(Kenya)": "ebu-KE"
+    },
+    "English": {
+        "(United Kingdom)": "en-GB",
+        "(United States)": "en-US",
+        "(World)": "en-001",
+        "(Caribbean)": "en-029",
+        "(Europe)": "en-150",
+        "(Antigua and Barbuda)": "en-AG",
+        "(Anguilla)": "en-AI",
+        "(American Samoa)": "en-AS",
+        "(Austria)": "en-AT",
+        "(Australia)": "en-AU",
+        "(Barbados)": "en-BB",
+        "(Belgium)": "en-BE",
+        "(Burundi)": "en-BI",
+        "(Bermuda)": "en-BM",
+        "(Bahamas)": "en-BS",
+        "(Botswana)": "en-BW",
+        "(Belize)": "en-BZ",
+        "(Canada)": "en-CA",
+        "(Cocos (Keeling) Islands)": "en-CC",
+        "(Switzerland)": "en-CH",
+        "(Cook Islands)": "en-CK",
+        "(Cameroon)": "en-CM",
+        "(Christmas Island)": "en-CX",
+        "(Cyprus)": "en-CY",
+        "(Germany)": "en-DE",
+        "(Denmark)": "en-DK",
+        "(Dominica)": "en-DM",
+        "(Eritrea)": "en-ER",
+        "(Finland)": "en-FI",
+        "(Fiji)": "en-FJ",
+        "(Falkland Islands)": "en-FK",
+        "(Micronesia)": "en-FM",
+        "(Grenada)": "en-GD",
+        "(Guernsey)": "en-GG",
+        "(Ghana)": "en-GH",
+        "(Gibraltar)": "en-GI",
+        "(Gambia)": "en-GM",
+        "(Guam)": "en-GU",
+        "(Guyana)": "en-GY",
+        "(Hong Kong)": "en-HK",
+        "(Indonesia)": "en-ID",
+        "(Ireland)": "en-IE",
+        "(Israel)": "en-IL",
+        "(Isle of Man)": "en-IM",
+        "(India)": "en-IN",
+        "(British Indian Ocean Territory)": "en-IO",
+        "(Jersey)": "en-JE",
+        "(Jamaica)": "en-JM",
+        "(Kenya)": "en-KE",
+        "(Kiribati)": "en-KI",
+        "(Saint Kitts and Nevis)": "en-KN",
+        "(Cayman Islands)": "en-KY",
+        "(Saint Lucia)": "en-LC",
+        "(Liberia)": "en-LR",
+        "(Lesotho)": "en-LS",
+        "(Madagascar)": "en-MG",
+        "(Marshall Islands)": "en-MH",
+        "(Macao SAR)": "en-MO",
+        "(Northern Mariana Islands)": "en-MP",
+        "(Montserrat)": "en-MS",
+        "(Malta)": "en-MT",
+        "(Mauritius)": "en-MU",
+        "(Malawi)": "en-MW",
+        "(Malaysia)": "en-MY",
+        "(Namibia)": "en-NA",
+        "(Norfolk Island)": "en-NF",
+        "(Nigeria)": "en-NG",
+        "(Netherlands)": "en-NL",
+        "(Nauru)": "en-NR",
+        "(Niue)": "en-NU",
+        "(New Zealand)": "en-NZ",
+        "(Papua New Guinea)": "en-PG",
+        "(Philippines)": "en-PH",
+        "(Pakistan)": "en-PK",
+        "(Pitcairn Islands)": "en-PN",
+        "(Puerto Rico)": "en-PR",
+        "(Palau)": "en-PW",
+        "(Rwanda)": "en-RW",
+        "(Solomon Islands)": "en-SB",
+        "(Seychelles)": "en-SC",
+        "(Sudan)": "en-SD",
+        "(Sweden)": "en-SE",
+        "(Singapore)": "en-SG",
+        "(St Helena Ascension Tristan da Cunha)": "en-SH",
+        "(Slovenia)": "en-SI",
+        "(Sierra Leone)": "en-SL",
+        "(South Sudan)": "en-SS",
+        "(Sint Maarten)": "en-SX",
+        "(Swaziland)": "en-SZ",
+        "(Turks and Caicos Islands)": "en-TC",
+        "(Tokelau)": "en-TK",
+        "(Tonga)": "en-TO",
+        "(Trinidad & Tobago)": "en-TT",
+        "(Tuvalu)": "en-TV",
+        "(Tanzania)": "en-TZ",
+        "(Uganda)": "en-UG",
+        "(US Minor Outlying Islands)": "en-UM",
+        "(United Arab Emirates)": "en-AE",
+        "(United States, Computer)": "en-US-POSIX",
+        "(Saint Vincent and the Grenadines)": "en-VC",
+        "(British Virgin Islands)": "en-VG",
+        "(U.S. Virgin Islands)": "en-VI",
+        "(Vanuatu)": "en-VU",
+        "(Samoa)": "en-WS",
+        "(South Africa)": "en-ZA",
+        "(Zambia)": "en-ZM",
+        "(Zimbabwe)": "en-ZW"
+    },
+    "Esperanto": {
+        "(World)": "eo-001"
+    },
+    "Estonian": {
+        "(Estonia)": "et-EE"
+    },
+    "Ewe": {
+        "(Ghana)": "ee-GH",
+        "(Togo)": "ee-TG"
+    },
+    "Ewondo": {
+        "(Cameroon)": "ewo-CM"
+    },
+    "Faroese": {
+        "(Faroe Islands)": "fo-FO",
+        "(Denmark)": "fo-DK"
+    },
+    "Fijian": {
+        "": "en-x-fj-SDL"
+    },
+    "Finnish": {
+        "(Finland)": "fi-FI"
+    },
+    "Filipino": {
+        "(Philippines)": "fil-PH"
+    },
+    "French": {
+        "(France)": "fr-FR",
+        "(Caribbean)": "fr-029",
+        "(Belgium)": "fr-BE",
+        "(Burkina Faso)": "fr-BF",
+        "(Burundi)": "fr-BI",
+        "(Benin)": "fr-BJ",
+        "(Saint Barthélemy)": "fr-BL",
+        "(Canada)": "fr-CA",
+        "(Congo DRC)": "fr-CD",
+        "(Central African Republic)": "fr-CF",
+        "(Congo)": "fr-CG",
+        "(Switzerland)": "fr-CH",
+        "(Ivory Coast)": "fr-CI",
+        "(Cameroon)": "fr-CM",
+        "(Djibouti)": "fr-DJ",
+        "(Algeria)": "fr-DZ",
+        "(Gabon)": "fr-GA",
+        "(French Guiana)": "fr-GF",
+        "(Guinea)": "fr-GN",
+        "(Guadeloupe)": "fr-GP",
+        "(Equatorial Guinea)": "fr-GQ",
+        "(Haiti)": "fr-HT",
+        "(Comoros)": "fr-KM",
+        "(Luxembourg)": "fr-LU",
+        "(Morocco)": "fr-MA",
+        "(Monaco)": "fr-MC",
+        "(Saint Martin)": "fr-MF",
+        "(Madagascar)": "fr-MG",
+        "(Mali)": "fr-ML",
+        "(Martinique)": "fr-MQ",
+        "(Mauritania)": "fr-MR",
+        "(Mauritius)": "fr-MU",
+        "(New Caledonia)": "fr-NC",
+        "(Niger)": "fr-NE",
+        "(French Polynesia)": "fr-PF",
+        "(Saint Pierre and Miquelon)": "fr-PM",
+        "(Réunion)": "fr-RE",
+        "(Rwanda)": "fr-RW",
+        "(Seychelles)": "fr-SC",
+        "(Senegal)": "fr-SN",
+        "(Syria)": "fr-SY",
+        "(Chad)": "fr-TD",
+        "(Togo)": "fr-TG",
+        "(Tunisia)": "fr-TN",
+        "(Vanuatu)": "fr-VU",
+        "(Wallis and Futuna)": "fr-WF",
+        "(Mayotte)": "fr-YT"
+    },
+    "Western Frisian": {
+        "(Netherlands)": "fy-NL"
+    },
+    "Friulian": {
+        "(Italy)": "fur-IT"
+    },
+    "Fulah": {
+        "(Latin)": "ff-LATN",
+        "(Cameroon)": "ff-CM",
+        "(Guinea)": "ff-GN",
+        "(Latin, Burkina Faso)": "ff-LATN-BH",
+        "(Latin, Cameroon)": "ff-LATN-CM",
+        "(Latin, Ghana)": "ff-LATN-GH",
+        "(Latin, Gambia)": "ff-LATN-GM",
+        "(Latin, Guinea)": "ff-LATN-GN",
+        "(Latin, Guinea-Bissau)": "ff-LATN-GW",
+        "(Latin, Liberia)": "ff-LATN-LR",
+        "(Latin, Mauritania)": "ff-LATN-MR",
+        "(Latin, Niger)": "ff-LATN-NE",
+        "(Latin, Nigeria)": "ff-LATN-NG",
+        "(Latin, Sierra Leone)": "ff-LATN-SL",
+        "(Mauritania)": "ff-MR",
+        "(Nigeria)": "ff-NG",
+        "(Latin, Senegal)": "ff-Latn-SN"
+    },
+    "Galician": {
+        "(Galician)": "gl-ES"
+    },
+    "Ganda": {
+        "(Uganda)": "lg-UG"
+    },
+    "Georgian": {
+        "(Georgia)": "ka-GE"
+    },
+    "German": {
+        "(Germany)": "de-DE",
+        "(Austria)": "de-AT",
+        "(Belgium)": "de-BE",
+        "(Switzerland)": "de-CH",
+        "(Liechtenstein)": "de-LI",
+        "(Luxembourg)": "de-LU",
+        "(Italy)": "de-IT"
+    },
+    "Greek": {
+        "(Greece)": "el-GR",
+        "(Cyprus)": "el-CY"
+    },
+    "Kalaallisut (Greenlandic)": {
+        "(Greenland)": "kl-GL"
+    },
+    "Guarani": {
+        "(Paraguay)": "gn-PY"
+    },
+    "Gujarati": {
+        "(India)": "gu-IN"
+    },
+    "Gusii": {
+        "(Kenya)": "guz-KE"
+    },
+    "Haitian": {
+        "(Creole)": "ht-HT"
+    },
+    "Hausa": {
+        "(Latin)": "ha-Latn",
+        "(Latin, Ghana)": "ha-Latn-GH",
+        "(Latin, Niger)": "ha-Latn-NE",
+        "(Latin, Nigeria)": "ha-Latn-NG"
+    },
+    "Hawaiian": {
+        "(United States)": "haw-US"
+    },
+    "Hebrew": {
+        "(Israel)": "he-IL"
+    },
+    "Hindi": {
+        "(India)": "hi-IN"
+    },
+    "Hmong": {
+        "Daw": "hmn-mww",
+        "(deprecated)": "zh-x-hmn-SDL"
+    },
+    "Hungarian": {
+        "(Hungary)": "hu-HU"
+    },
+    "Ibibio": {
+        "(Nigeria)": "ibb-NG"
+    },
+    "Icelandic": {
+        "(Iceland)": "is-IS"
+    },
+    "Igbo": {
+        "(Nigeria)": "ig-NG"
+    },
+    "Impiaq": {
+        "": "iu-x-ik-SDL"
+    },
+    "Indonesian": {
+        "(Indonesia)": "id-ID"
+    },
+    "Interlingua": {
+        "(World)": "ia-001",
+        "(France)": "ia-FR"
+    },
+    "Inuktitut": {
+        "(Syllabics Canada)": "iu-Cans-CA",
+        "(Latin Canada)": "iu-Latn-CA"
+    },
+    "Irish": {
+        "(Ireland)": "ga-IE",
+        "(United Kingdom)": "ga-GB"
+    },
+    "Italian": {
+        "(Italy)": "it-IT",
+        "(Switzerland)": "it-CH",
+        "(San Marino)": "it-SM",
+        "(Vatican City)": "it-VA"
+    },
+    "isiXhosa": {
+        "(South Africa)": "xh-ZA"
+    },
+    "isiZulu": {
+        "(South Africa)": "zu-ZA"
+    },
+    "Japanese": {
+        "(Japan)": "ja-JP"
+    },
+    "Javanese": {
+        "(Javanese)": "jv-Java",
+        "(Javanese, Indonesia)": "jv-Java-ID",
+        "(Latin)": "jv-Latn",
+        "(Indonesia)": "jv-Latn-ID"
+    },
+    "Jola-Fonyi": {
+        "": "dyo-SN",
+        "(Senegal)": "dyo-SN"
+    },
+    "Kabyle": {
+        "(Algeria)": "kab-DZ"
+    },
+    "Kabuverdianu": {
+        "(Cabo Verde)": "kea-CV"
+    },
+    "Kako": {
+        "(Cameroon)": "kkj-CM"
+    },
+    "Kalaallisut": {
+        "(Greenland)": "kl-GL"
+    },
+    "Kalenjin": {
+        "(Kenya)": "kln-KE"
+    },
+    "Kamba": {
+        "(Kenya)": "kam-KE"
+    },
+    "Kannada": {
+        "(India)": "kn-IN"
+    },
+    "Kashmiri": {
+        "(Perso-Arabic)": "ks-Arab",
+        "(Perso-Arabic, India)": "ks-Arab-IN",
+        "(Devanagari)": "ks-Deva",
+        "(Devanagari, India)": "ks-Deva-IN"
+    },
+    "Kazakh": {
+        "(Kazakhstan)": "kk-KZ"
+    },
+    "Khmer": {
+        "(Cambodia)": "km-KH"
+    },
+    "K'iche'": {
+        "(Latin)": "quc-Latn",
+        "(Latin, Guatemala)": "quc-Latn-GT"
+    },
+    "Kikuyu": {
+        "(Kenya)": "ki-KE"
+    },
+    "Kinyarwanda": {
+        "(Rwanda)": "rw-RW"
+    },
+    "Kiswahili": {
+        "(Congo - Kinshasa)": "sw-CD",
+        "(Kenya)": "sw-KE",
+        "(Tanzania)": "sw-TZ",
+        "(Uganda)": "sw-UG"
+    },
+    "Konkani": {
+        "(India)": "kok-IN"
+    },
+    "Korean": {
+        "(Korea)": "ko-KR",
+        "(North Korea)": "ko-KP"
+    },
+    "Koyra Chiini": {
+        "(Mali)": "khq-ML"
+    },
+    "Koyraboro Senni": {
+        "(Mali)": "ses-ML"
+    },
+    "Kwasio": {
+        "(Cameroon)": "nmg-CM"
+    },
+    "Kyrgyz": {
+        "(Kyrgyzstan)": "ky-KG"
+    },
+    "Lakota": {
+        "(United States)": "lkt-US"
+    },
+    "Langi": {
+        "(Tanzania)": "lag-TZ"
+    },
+    "Lao": {
+        "(Laos)": "lo-LA"
+    },
+    "Latin": {
+        "(World)": "la-001",
+        "(Vatican City)": "la-VA"
+    },
+    "Latvian": {
+        "(Latvia)": "lv-LV"
+    },
+    "Lingala": {
+        "(Angola)": "ln-AO",
+        "(Congo DRC)": "ln-CD",
+        "(Central African Republic)": "ln-CF",
+        "(Congo)": "ln-CG"
+    },
+    "Lithuanian": {
+        "(Lithuania)": "lt-LT"
+    },
+    "Low German": {
+        "": "nds",
+        "(Germany)": "nds-DE",
+        "(Netherlands)": "nds-NL"
+    },
+    "Lower Sorbian": {
+        "(Germany)": "dsb-DE"
+    },
+    "Luba-Katanga": {
+        "(Congo DRC)": "lu-CD"
+    },
+    "Luo": {
+        "(Kenya)": "luo-KE"
+    },
+    "Luyia": {
+        "(Kenya)": "luy-KE"
+    },
+    "Luxembourgish": {
+        "(Luxembourg)": "lb-LU"
+    },
+    "Macedonian (North Macedonia)": {
+        "(North Macedonia)": "mk-MK"
+    },
+    "Machame": {
+        "(Tanzania)": "jmc-TZ"
+    },
+    "Maithili": {
+        "": "mai",
+        "(India)": "mai-IN"
+    },
+    "Makhuva-Meetto": {
+        "(Mozambique)": "mgh-MZ"
+    },
+    "Makonde": {
+        "(Tanzania)": "kde-TZ"
+    },
+    "Malayalam": {
+        "(India)": "ml-IN"
+    },
+    "Malagasy": {
+        "(Madagascar)": "mg-MG"
+    },
+    "Malay": {
+        "(Malaysia)": "ms-MY",
+        "(Brunei)": "ms-BN",
+        "(Latin Singapore)": "ms-SG",
+        "(Indonesia)": "ms-ID"
+    },
+    "Maltese": {
+        "(Malta)": "mt-MT"
+    },
+    "Manipuri": {
+        "(India)": "mni-IN"
+    },
+    "Manx": {
+        "(Isle of Man)": "gv-IM"
+    },
+    "Maori": {
+        "(New Zealand)": "mi-NZ"
+    },
+    "Mapuche": {
+        "(Chile)": "arn-CL"
+    },
+    "Marathi": {
+        "(India)": "mr-IN"
+    },
+    "Masai": {
+        "(Kenya)": "mas-KE",
+        "(Tanzania)": "mas-TZ"
+    },
+    "Mazanderani": {
+        "(Iran)": "mzn-IR"
+    },
+    "Metaʼ": {
+        "(Cameroon)": "mgo-CM"
+    },
+    "Meru": {
+        "(Kenya)": "mer-KE"
+    },
+    "Mohawk": {
+        "(Mohawk)": "moh-CA"
+    },
+    "Morisyen": {
+        "(Mauritius)": "mfe-MU"
+    },
+    "Mongolian": {
+        "(Mongolia)": "mn-MN",
+        "(Cyrillic)": "mn-Cyrl",
+        "(Traditional Mongolian)": "mn-Mong",
+        "(Traditional Mongolian, China)": "mn-Mong-CN",
+        "(Traditional Mongolian, Mongolia)": "mn-Mong-MN"
+    },
+    "Mundang": {
+        "(Cameroon)": "mua-CM"
+    },
+    "Nama": {
+        "(Namibia)": "naq-NA"
+    },
+    "Nauru": {
+        "": "haw-x-na-SDL"
+    },
+    "Nepali": {
+        "(Nepal)": "ne-NP",
+        "(India)": "ne-IN"
+    },
+    "Ngiemboon": {
+        "(Cameroon)": "nnh-CM"
+    },
+    "Ngomba": {
+        "(Cameroon)": "jgo-CM"
+    },
+    "Nigerian Pidgin": {
+        "": "pcm",
+        "(Nigeria)": "pcm-NG"
+    },
+    "N'ko": {
+        "(Guinea)": "nqo-GN"
+    },
+    "Northern Luri": {
+        "(Iraq)": "lrc-IQ",
+        "(Iran)": "lrc-IR"
+    },
+    "North Ndebele": {
+        "(Zimbabwe)": "nd-ZW"
+    },
+    "Norwegian Bokmål": {
+        "(Norway)": "nb-NO",
+        "(Svalbard and Jan Mayen)": "nb-SJ"
+    },
+    "Norwegian Nynorsk": {
+        "(Norway)": "nn-NO"
+    },
+    "Norwegian": {
+        "": "nb-NO"
+    },
+    "Nuer": {
+        "(South Sudan)": "nus-SS"
+    },
+    "Nyankole": {
+        "(Uganda)": "nyn-UG"
+    },
+    "Occitan": {
+        "(France)": "oc-FR"
+    },
+    "Odia": {
+        "(India)": "or-IN"
+    },
+    "Oromo": {
+        "(Ethiopia)": "om-ET",
+        "(Kenya)": "om-KE"
+    },
+    "Ossetic": {
+        "(Georgia)": "os-GE",
+        "(Russia)": "os-RU"
+    },
+    "Papiamento": {
+        "(Caribbean)": "pap-029"
+    },
+    "Pashto": {
+        "(Afghanistan)": "ps-AF",
+        "(Pakistan)": "ps-PK"
+    },
+    "Persian": {
+        "": "fa-IR",
+        "(Afghanistan)": "fa-AF"
+    },
+    "Polish": {
+        "(Poland)": "pl-PL"
+    },
+    "Prussian": {
+        "(World)": "prg-001"
+    },
+    "Portuguese": {
+        "(Portugal)": "pt-PT",
+        "(Angola)": "pt-AO",
+        "(Brazil)": "pt-BR",
+        "(Cabo Verde)": "pt-CV",
+        "(Equatorial Guinea)": "pt-GQ",
+        "(Guinea-Bissau)": "pt-GW",
+        "(Luxembourg)": "pt-LU",
+        "(Macao SAR)": "pt-MO",
+        "(Mozambique)": "pt-MZ",
+        "(Switzerland)": "pt-CH",
+        "(São Tomé and Príncipe)": "pt-ST",
+        "(Timor-Leste)": "pt-TL"
+    },
+    "Punjabi": {
+        "(Pakistan)": "pa-Arab-PK",
+        "(India)": "pa-IN",
+        "(Gurmukhi)": "pa-Guru",
+        "(Arabic)": "pa-Arab"
+    },
+    "Quechua": {
+        "(Bolivia)": "quz-BO",
+        "(Ecuador)": "quz-EC",
+        "(Peru)": "quz-PE"
+    },
+    "Romanian": {
+        "(Romania)": "ro-RO",
+        "(Moldova)": "ro-MD"
+    },
+    "Romansh": {
+        "(Switzerland)": "rm-CH"
+    },
+    "Rombo": {
+        "(Tanzania)": "rof-TZ"
+    },
+    "Rundi": {
+        "(Burundi)": "rn-BI"
+    },
+    "Russian": {
+        "(Russia)": "ru-RU",
+        "(Belarus)": "ru-BY",
+        "(Kyrgyzstan)": "ru-KG",
+        "(Kazakhstan)": "ru-KZ",
+        "(Moldova)": "ru-MD",
+        "(Ukraine)": "ru-UA"
+    },
+    "Rwa": {
+        "(Tanzania)": "rwk-TZ"
+    },
+    "Saho": {
+        "(Eritrea)": "ssy-ER"
+    },
+    "Sakha": {
+        "(Russia)": "sah-RU"
+    },
+    "Samburu": {
+        "(Kenya)": "saq-KE"
+    },
+    "Northern Sami": {
+        "(Finland)": "se-FI",
+        "(Norway)": "se-NO",
+        "(Sweden)": "se-SE"
+    },
+    "Southern Sami": {
+        "(Norway)": "sma-NO",
+        "(Sweden)": "sma-SE"
+    },
+    "Lule Sami": {
+        "(Norway)": "smj-NO",
+        "(Sweden)": "smj-SE"
+    },
+    "Inari Sami": {
+        "(Finland)": "smn-FI"
+    },
+    "Skolt Sami": {
+        "(Finland)": "sms-FI"
+    },
+    "Samoan": {
+        "": "haw-x-sm-SDL"
+    },
+    "Sango": {
+        "(Central African Republic)": "sg-CF"
+    },
+    "Sangu": {
+        "(Tanzania)": "sbp-TZ"
+    },
+    "Santali": {
+        "": "sat",
+        "(Ol Chiki)": "sat-OLCK",
+        "(Ol Chiki, India)": "sat-OLCK-IN"
+    },
+    "Sanskrit": {
+        "(India)": "sa-IN"
+    },
+    "Scottish Gaelic": {
+        "(United Kingdom)": "gd-GB"
+    },
+    "Sena": {
+        "(Mozambique)": "seh-MZ"
+    },
+    "Shambala": {
+        "(Tanzania)": "ksb-TZ"
+    },
+    "Shona": {
+        "(Latin Zimbabwe)": "sn-Latn-ZW"
+    },
+    "Serbian": {
+        "(Latin, Serbia)": "sr-Latn-RS",
+        "(Cyrillic, Bosnia and Herzegovina)": "sr-Cyrl-BA",
+        "(Cyrillic, Montenegro)": "sr-Cyrl-ME",
+        "(Cyrillic, Serbia)": "sr-Cyrl-RS",
+        "(Cyrillic, Kosovo)": "sr-Cyrl-XK",
+        "(Latin, Bosnia & Herzegovina)": "sr-Latn-BA",
+        "(Latin, Montenegro)": "sr-Latn-ME",
+        "(Latin, Kosovo)": "sr-Latn-XK"
+    },
+    "Sesotho": {
+        "(Lesotho)": "st-LS",
+        "(South Africa)": "st-ZA"
+    },
+    "Sesotho sa Leboa": {
+        "(South Africa)": "nso-ZA"
+    },
+    "Setswana": {
+        "(Botswana)": "tn-BW",
+        "(South Africa)": "tn-ZA"
+    },
+    "Sindhi": {
+        "(Arabic)": "sd-Arab",
+        "(Pakistan)": "sd-Arab-PK",
+        "(Devanagari)": "sd-Deva",
+        "(Devanagari, India)": "sd-Deva-IN"
+    },
+    "Sinhala": {
+        "(Sri Lanka)": "si-LK"
+    },
+    "siSwati": {
+        "(Eswatini)": "ss-SZ",
+        "(South Africa)": "ss-ZA"
+    },
+    "Slovak": {
+        "(Slovakia)": "sk-SK"
+    },
+    "Slovenian": {
+        "(Slovenia)": "sl-SI"
+    },
+    "Soga": {
+        "(Uganda)": "xog-UG"
+    },
+    "Somali": {
+        "(Djibouti)": "so-DJ",
+        "(Ethiopia)": "so-ET",
+        "(Kenya)": "so-KE",
+        "(Somalia)": "so-SO"
+    },
+    "South Ndebele": {
+        "(South Africa)": "nr-ZA"
+    },
+    "Spanish": {
+        "(Spain International Sort)": "es-ES",
+        "(Latin America)": "es-419",
+        "(Latin America) (deprecated)": "x-es-XL",
+        "(Argentina)": "es-AR",
+        "(Belize)": "es-BZ",
+        "(Bolivia)": "es-BO",
+        "(Brazil)": "es-BR",
+        "(Chile)": "es-CL",
+        "(Colombia)": "es-CO",
+        "(Costa Rica)": "es-CR",
+        "(Cuba)": "es-CU",
+        "(Dominican Republic)": "es-DO",
+        "(Ecuador)": "es-EC",
+        "(International)": "es-x-int-SDL",
+        "(Modern)": "es-x-mo-SDL",
+        "(Equatorial Guinea)": "es-GQ",
+        "(Guatemala)": "es-GT",
+        "(Honduras)": "es-HN",
+        "(Mexico)": "es-MX",
+        "(Nicaragua)": "es-NI",
+        "(Panama)": "es-PA",
+        "(Peru)": "es-PE",
+        "(Philippines)": "es-PH",
+        "(Puerto Rico)": "es-PR",
+        "(Paraguay)": "es-PY",
+        "(El Salvador)": "es-SV",
+        "(United States)": "es-US",
+        "(Uruguay)": "es-UY",
+        "(Venezuela)": "es-VE"
+    },
+    "Standard Moroccan Tamazight": {
+        "(Tifinagh Morocco)": "zgh-Tfng-MA"
+    },
+    "Sudanese": {
+        "": "su",
+        "(Latin)": "su-LATN",
+        "(Latin, Indonesia)": "su-LATN-ID"
+    },
+    "Sundanese": {
+        "(Roman)": "ml-x-su-SDL"
+    },
+    "Swahili": {
+        "(Congo)": "swc"
+    },
+    "Swedish": {
+        "(Sweden)": "sv-SE",
+        "(Åland Islands)": "sv-AX",
+        "(Finland)": "sv-FI"
+    },
+    "Syriac": {
+        "(Syria)": "syr-SY"
+    },
+    "Tagalog": {
+        "": "tl-x-SDL"
+    },
+    "Tajik": {
+        "(Cyrillic Tajikistan)": "tg-Cyrl-TJ"
+    },
+    "Taita": {
+        "(Kenya)": "dav-KE"
+    },
+    "Tachelhit": {
+        "(Latin)": "shi-Latn",
+        "(Latin, Morocco)": "shi-Latn-MA",
+        "(Tifinagh)": "shi-Tfng",
+        "(Tifinagh, Morocco)": "shi-Tfng-MA"
+    },
+    "Central Atlas Tamazight": {
+        "(Latin, Algeria)": "tzm-Latn-DZ",
+        "(Latin, Morocco)": "tzm-Latn-MA",
+        "(Latin)": "tzm-Latn",
+        "(Arabic, Morocco)": "tzm-Arab-MA",
+        "(Arabic)": "tzm-Arab",
+        "(Tifinagh, Morocco)": "tzm-Tfmg-MA",
+        "(Tifinagh)": "tzm-Tfmg"
+    },
+    "Tamil": {
+        "(India)": "ta-IN",
+        "(Sri Lanka)": "ta-LK",
+        "(Malaysia)": "ta-MY",
+        "(Singapore)": "ta-SG"
+    },
+    "Tasawaq": {
+        "(Niger)": "twq-NE"
+    },
+    "Tatar": {
+        "(Russia)": "tt-RU"
+    },
+    "Telugu": {
+        "(India)": "te-IN"
+    },
+    "Teso": {
+        "(Kenya)": "teo-KE",
+        "(Uganda)": "teo-UG"
+    },
+    "Thai": {
+        "(Thailand)": "th-TH"
+    },
+    "Tibetan": {
+        "(China)": "bo-CN",
+        "(India)": "bo-IN"
+    },
+    "Tigre": {
+        "(Eritrea)": "tig-ER"
+    },
+    "Tigrinya": {
+        "(Eritrea)": "ti-ER",
+        "(Ethiopia)": "ti-ET"
+    },
+    "Tongan": {
+        "(Tonga)": "to-TO"
+    },
+    "Xitsonga": {
+        "(South Africa)": "ts-ZA"
+    },
+    "Turkish": {
+        "(Turkey)": "tr-TR",
+        "(Cyprus)": "tr-CY"
+    },
+    "Turkmen": {
+        "(Turkmenistan)": "tk-TM"
+    },
+    "Ukrainian": {
+        "(Ukraine)": "uk-UA"
+    },
+    "Upper Sorbian": {
+        "(Germany)": "hsb-DE"
+    },
+    "Urdu": {
+        "(Pakistan)": "ur-PK",
+        "(India)": "ur-IN"
+    },
+    "Uyghur": {
+        "(China)": "ug-CN"
+    },
+    "Uzbek": {
+        "(Perso-Arabic, Afghanistan)": "uz-Arab-AF",
+        "(Cyrillic, Uzbekistan)": "uz-Cyrl-UZ",
+        "(Latin, Uzbekistan)": "uz-Latn-UZ"
+    },
+    "Vai": {
+        "(Latin)": "vai-Latn",
+        "(Vai)": "vai-Vaii",
+        "(Latin, Liberia)": "vai-Latn-LR",
+        "(Vai, Liberia)": "vai-Vaii-LR"
+    },
+    "Venda": {
+        "(South Africa)": "ve-ZA"
+    },
+    "Vietnamese": {
+        "(Vietnam)": "vi-VN"
+    },
+    "Volapük": {
+        "(World)": "vo-001"
+    },
+    "Vunjo": {
+        "(Tanzania)": "vun-TZ"
+    },
+    "Walser": {
+        "(Switzerland)": "wae-CH"
+    },
+    "Welsh": {
+        "(United Kingdom)": "cy-GB"
+    },
+    "Wolaytta": {
+        "(Ethiopia)": "wal-ET"
+    },
+    "Wolof": {
+        "(Senegal)": "wo-SN"
+    },
+    "Yakut/Sakha": {
+        "(Russia)": "sah-RU"
+    },
+    "Yangben": {
+        "(Cameroon)": "yav-CM"
+    },
+    "Yiddish": {
+        "(World)": "yi-001"
+    },
+    "Yi": {
+        "(China)": "ii-CN"
+    },
+    "Yoruba": {
+        "(Benin)": "yo-BJ",
+        "(Nigeria)": "yo-NG"
+    },
+    "Zarma": {
+        "(Niger)": "dje-NE"
+    }
+}
