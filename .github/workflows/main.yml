@@ -1,37 +1,38 @@
-name: Run UI and Build Executable
+name: Build EXE
 
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build_windows:
-    runs-on: windows-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout Code
       uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.10'
 
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install -r requirements.txt
         pip install pyinstaller
 
-    - name: Run main_runner.py
+    - name: Build EXE
       run: |
-        python main_runner.py  # This runs the orchestrating script
+        pyinstaller --onefile main_runner.py
 
-    - name: Build Executable
-      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json;." --add-data "language_viewer.py;." main_runner.py
-
-    - name: Upload Artifact
+    - name: Upload EXE Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: CreateTproGroupImportTemplate_windows
-        path: dist/CreateTproGroupImportTemplate.exe
+        name: built-exe
+        path: dist/main_runner.exe
