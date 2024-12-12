@@ -226,7 +226,7 @@ class VariantSelectionWindow:
                 code = variant_map[selected_display]
                 final_selection[lang] = code
 
-        save_path = os.path.join(os.path.dirname(__file__), "selected.json")
+        save_path = os.path.join(os.path.dirname(sys.executable), "selected.json")
 
         # Remove the existing file if it exists
         if os.path.exists(save_path):
