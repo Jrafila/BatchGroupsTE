@@ -31,26 +31,3 @@ jobs:
       with:
         name: CreateTproGroupImportTemplate_windows
         path: dist/CreateTproGroupImportTemplate.exe
-
-  build_linux:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Install Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y python3-tk
-        python3 -m pip install --upgrade pip
-        pip3 install pyinstaller
-
-    - name: Build Executable
-      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json:." test.py
-
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: CreateTproGroupImportTemplate_linux
-        path: dist/CreateTproGroupImportTemplate
