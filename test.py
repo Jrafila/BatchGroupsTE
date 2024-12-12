@@ -1,17 +1,29 @@
 import json
 import tkinter as tk
 from tkinter import messagebox, Listbox
+import sys
+import os
+
+
+def resource_path(relative_path):
+    """Get the absolute path to a resource, works for PyInstaller."""
+    if hasattr(sys, '_MEIPASS'):
+        # PyInstaller creates a temporary folder (_MEIPASS) to store files
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 
 def load_languages():
     """Load languages from the JSON file and update the listbox."""
     try:
-        with open("languages.json", "r", encoding="utf-8") as file:
+        # Use resource_path to locate the JSON file
+        json_file_path = resource_path("languages.json")
+        with open(json_file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
 
         # Extract only the language names (keys)
         languages = list(data.keys())
-        
+
         # Clear the listbox and add languages
         listbox.delete(0, tk.END)
         for lang in languages:
