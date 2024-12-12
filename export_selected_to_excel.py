@@ -1,9 +1,10 @@
 import os
+import sys
 import json
 from openpyxl import Workbook
 
 def export_to_excel():
-    # Base directory where this script (and selected.json) reside
+    # Base directory where the exe and selected.json reside
     base_dir = os.path.dirname(sys.executable)
     json_path = os.path.join(base_dir, "selected.json")
 
