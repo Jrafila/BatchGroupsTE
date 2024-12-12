@@ -24,13 +24,13 @@ jobs:
         pip install pyinstaller
 
     - name: Build Executable
-      run: pyinstaller --onefile --windowed test.py
+      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate test.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: test_executable_windows
-        path: dist/test.exe
+        name: CreateTproGroupImportTemplate_windows
+        path: dist/CreateTproGroupImportTemplate.exe
 
   build_linux:
     runs-on: ubuntu-latest
@@ -47,10 +47,10 @@ jobs:
         pip3 install pyinstaller
 
     - name: Build Executable
-      run: pyinstaller --onefile --windowed test.py
+      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate test.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: test_executable_linux
-        path: dist/test
+        name: CreateTproGroupImportTemplate_linux
+        path: dist/CreateTproGroupImportTemplate
