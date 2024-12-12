@@ -5,7 +5,6 @@ import os
 
 def load_languages():
     """Load languages and their variants from the JSON file."""
-    # For testing, let's assume we have some languages loaded
     global language_variants
     language_variants = {
         "English": {"US": "en-US", "UK": "en-GB"},
@@ -15,13 +14,11 @@ def load_languages():
 
 def update_language_list(search_term):
     """Update the checkboxes based on the search term."""
-    # (Keep the existing implementation of update_language_list)
-    pass
+    pass  # Keep the existing implementation of update_language_list
 
 def update_selected_languages():
     """Update the display of selected languages."""
-    # (Keep the existing implementation of update_selected_languages)
-    pass
+    pass  # Keep the existing implementation of update_selected_languages
 
 def save_to_json(data):
     """Save the selected languages and variants to a new JSON file."""
@@ -31,31 +28,24 @@ def save_to_json(data):
 
 def select_variants():
     """Allow the user to select variants one by one."""
-    # (Keep the existing implementation of select_variants)
-    pass
+    pass  # Keep the existing implementation of select_variants
 
 def on_search_key(event):
     """Handle key release in the search box."""
-    # (Keep the existing implementation of on_search_key)
-    pass
+    pass  # Keep the existing implementation of on_search_key
 
 def main():
     """Main function to run the language viewer."""
-    # Check if the script is running in GitHub Actions or any non-interactive environment
-    is_ci = os.getenv('CI', False)  # GitHub Actions sets the CI environment variable to 'true'
+    is_ci = os.getenv('CI', False)  # Check if running in GitHub Actions or non-interactive environment
 
     if is_ci:
-        # In CI, we bypass the UI logic and simulate selecting German
         print("Running in CI environment, skipping UI.")
         load_languages()
         selected_languages = {"German": {"Germany": "de-DE", "Austria": "de-AT"}}
         save_to_json(selected_languages)
         print("Languages processed and saved.")
     else:
-        # Create the main application window for non-CI (interactive) environments
-        global root, all_languages, language_vars, language_variants, search_var, language_frame_inner, language_canvas, selected_frame_inner, selected_canvas
-
-        # Create the main application window
+        global root
         root = tk.Tk()
         root.title("Languages Viewer")
         root.geometry("800x500")
@@ -105,7 +95,8 @@ def main():
         load_languages()
 
         # Start the tkinter main loop
-        root.mainloop()
+        root.protocol("WM_DELETE_WINDOW", root.quit)  # Ensure the window closes cleanly
+        root.mainloop()  # Run the tkinter main event loop
 
 if __name__ == "__main__":
     main()
