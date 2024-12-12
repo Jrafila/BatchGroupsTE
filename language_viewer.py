@@ -9,14 +9,16 @@ def on_button_click():
 # Check if running in CI (GitHub Actions)
 is_ci = os.getenv('CI', False)  # GitHub Actions sets 'CI' to True by default
 
+# Create the main application window even in CI
+root = tk.Tk()
+
 if is_ci:
     print("Running in CI environment, skipping the UI and closing immediately.")
     # Simulate the behavior in CI (by skipping the GUI and immediately closing)
     # Simulate the button click behavior by calling the function directly
-    on_button_click()
+    on_button_click()  # Simulate button click to close the window immediately
 else:
     # Create the main application window for local environments (interactive)
-    root = tk.Tk()
     root.title("Simple UI")
     root.geometry("300x200")
 
