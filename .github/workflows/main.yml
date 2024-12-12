@@ -24,7 +24,7 @@ jobs:
         pip install pyinstaller
 
     - name: Build Executable
-      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate test.py
+      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json;." test.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
@@ -47,7 +47,7 @@ jobs:
         pip3 install pyinstaller
 
     - name: Build Executable
-      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate test.py
+      run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json:." test.py
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
