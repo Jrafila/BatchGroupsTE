@@ -34,5 +34,11 @@ def export_to_excel():
     wb.save(excel_path)
     print(f"Excel file created: {excel_path}")
 
+     try:
+        os.remove(json_path)
+        print(f"Deleted intermediate file: {json_path}")
+    except Exception as e:
+        print(f"Error deleting {json_path}: {e}")
+
 if __name__ == "__main__":
     export_to_excel()
