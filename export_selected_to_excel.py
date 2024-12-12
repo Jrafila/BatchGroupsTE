@@ -4,7 +4,7 @@ from openpyxl import Workbook
 
 def export_to_excel():
     # Base directory where this script (and selected.json) reside
-    base_dir = os.path.dirname(__file__)
+    base_dir = os.path.dirname(sys.executable)
     json_path = os.path.join(base_dir, "selected.json")
 
     if not os.path.exists(json_path):
