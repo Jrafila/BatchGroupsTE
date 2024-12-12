@@ -1,8 +1,8 @@
-name: Build Executable
+name: Run UI and Build Executable
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -23,9 +23,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pyinstaller
 
-    - name: Run Scripts (Main Runner)
+    - name: Run main_runner.py
       run: |
-        python main_runner.py  # This will run the orchestrating script, skipping the GUI in CI
+        python main_runner.py  # This runs the orchestrating script
 
     - name: Build Executable
       run: pyinstaller --onefile --windowed --name=CreateTproGroupImportTemplate --add-data "languages.json;." --add-data "language_viewer.py;." main_runner.py
