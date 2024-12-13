@@ -200,11 +200,13 @@ class VariantSelectionWindow:
         button_frame = tk.Frame(self.top)
         button_frame.pack(pady=10, anchor="e")
 
+        confirm_button = tk.Button(button_frame, text="Close", command=self.confirm_selection)
+        confirm_button.pack(side="left")
+
         save_button = tk.Button(button_frame, text="Save", command=self.save_and_end)
         save_button.pack(side="left", padx=(0,5))
 
-        confirm_button = tk.Button(button_frame, text="Confirm", command=self.confirm_selection)
-        confirm_button.pack(side="left")
+
 
     def on_frame_configure(self, event):
         self.canvas.configure(scrollregion=self.canvas.bbox("all"))
