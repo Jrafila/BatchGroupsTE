@@ -125,7 +125,7 @@ def export_to_excel():
             ws.append(row)
 
         # Save the workbook
-        excel_filename = "selected_languages.xlsx"
+        excel_filename = "BatchGroupImportTemplate.xlsx"
         excel_path = os.path.join(base_dir, excel_filename)
         wb.save(excel_path)
         print(f"Excel file created: {excel_path}")
