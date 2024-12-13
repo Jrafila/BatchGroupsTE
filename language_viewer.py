@@ -1,8 +1,8 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
 import json
 import os
 import sys
+from tkinter import ttk, messagebox
 
 def load_data():
     # Load full data for languages and their variants
@@ -52,7 +52,7 @@ class LanguageViewerApp:
         bottom_frame = tk.Frame(master)
         bottom_frame.pack(padx=10, pady=(0,10), fill="both")
 
-        # A text widget to show selected languages nicely wrapped
+        # A text widget to show selected languages
         self.selected_text = tk.Text(bottom_frame, height=3, wrap="word")
         self.selected_text.pack(side="left", fill="both", expand=True)
         self.selected_text.insert("1.0", "Selected Languages: None")
@@ -138,11 +138,11 @@ class VariantSelectionWindow:
         for lang in self.selected_langs:
             lang_variants = self.data[lang]  # Dictionary of region -> code
             if len(lang_variants) == 1:
-                # single variant - automatically select it
+                # Single variant - automatically select it
                 region, code = next(iter(lang_variants.items()))
-                self.single_variant_selected[lang] = code
+                self.single_variant_selected[lang] = {region: code}
             else:
-                # multiple variants - user chooses
+                # Multiple variants - user chooses
                 self.multi_variant_langs[lang] = lang_variants
 
         self.top = tk.Toplevel(parent)
@@ -170,11 +170,11 @@ class VariantSelectionWindow:
         self.canvas.configure(yscrollcommand=scrollbar.set)
 
         self.variant_frame = tk.Frame(self.canvas)
-        self.canvas.create_window((0,0), window=self.variant_frame, anchor="nw")
+        self.canvas.create_window((0, 0), window=self.variant_frame, anchor="nw")
         self.variant_frame.bind("<Configure>", self.on_frame_configure)
 
-        # lang -> (combobox, variant_map)
-        self.variant_selection = {}
+        # Language -> { region: (var, code) }
+        self.variant_check_vars = {}
 
         for lang, lang_variants in self.multi_variant_langs.items():
             tk.Label(self.variant_frame, text=lang, font=("Arial", 10, "bold")).pack(anchor="w", pady=(5,2))
@@ -182,54 +182,55 @@ class VariantSelectionWindow:
             lf = tk.Frame(self.variant_frame)
             lf.pack(fill="x", pady=(0,10))
 
-            variant_map = {}
+            self.variant_check_vars[lang] = {}
             for region, code in lang_variants.items():
                 display_str = f"{region} ({code})" if region else code
-                variant_map[display_str] = code
+                var = tk.BooleanVar()
+                cb = tk.Checkbutton(lf, text=display_str, variable=var, anchor="w")
+                cb.pack(anchor="w")
+                self.variant_check_vars[lang][region] = (var, code)
 
-            cb_value = tk.StringVar()
-            combo = ttk.Combobox(lf, textvariable=cb_value, state="readonly")
-            combo['values'] = list(variant_map.keys())
-
-            if combo['values']:
-                cb_value.set(combo['values'][0])
-
-            combo.pack(anchor="w", fill="x")
-            self.variant_selection[lang] = (combo, variant_map)
-
+        # Buttons
         button_frame = tk.Frame(self.top)
         button_frame.pack(pady=10, anchor="e")
 
+        save_button = tk.Button(button_frame, text="Save", command=self.save_and_end)
+        save_button.pack(side="left", padx=(0,5))
+
         confirm_button = tk.Button(button_frame, text="Close", command=self.confirm_selection)
         confirm_button.pack(side="left")
-
-        save_button = tk.Button(button_frame, text="Save", command=self.save_and_end)
-        save_button.pack(side="left", padx=(5,5))
-
-
 
     def on_frame_configure(self, event):
         self.canvas.configure(scrollregion=self.canvas.bbox("all"))
 
     def confirm_selection(self):
-        # Just close after confirming without saving
+        # Just close without saving
         self.top.destroy()
 
     def save_and_end(self):
-        # Save and then end the entire application
+        # Save and then end the application
         self.save_selection()
         self.end_application()
 
     def save_selection(self):
-        # Gather selected variants from multi-variant languages
-        final_selection = dict(self.single_variant_selected)  # start with single-variant languages
-        for lang, (combo, variant_map) in self.variant_selection.items():
-            selected_display = combo.get()
-            if selected_display:
-                code = variant_map[selected_display]
-                final_selection[lang] = code
+        # If multiple variants selected for a language, pick the first selected one
+        final_selection = {}
 
-        save_path = os.path.join(os.path.dirname(sys.executable), "selected.json")
+        # Add single-variant selections
+        for lang, variant_map in self.single_variant_selected.items():
+            # Extract the first code
+            code = next(iter(variant_map.values()))
+            final_selection[lang] = code
+
+        # Add multi-variant selections
+        for lang, checkboxes in self.variant_check_vars.items():
+            selected_codes = [code for (var, code) in checkboxes.values() if var.get()]
+            if selected_codes:
+                # Take the first selected code
+                final_selection[lang] = selected_codes[0]
+
+        # Save to JSON in the same directory as this script
+        save_path = os.path.join(os.path.dirname(__file__), "selected.json")
 
         # Remove the existing file if it exists
         if os.path.exists(save_path):
@@ -244,7 +245,6 @@ class VariantSelectionWindow:
         # Destroy the variant selection window and the main app window
         self.top.destroy()
         self.parent.destroy()
-
 
 def launch_ui():
     root = tk.Tk()
