@@ -204,7 +204,7 @@ class VariantSelectionWindow:
         confirm_button.pack(side="left")
 
         save_button = tk.Button(button_frame, text="Save", command=self.save_and_end)
-        save_button.pack(side="left", padx=(0,5))
+        save_button.pack(side="left", padx=(5,5))
 
 
 
