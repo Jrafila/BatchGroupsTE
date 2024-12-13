@@ -7,7 +7,7 @@ import tkinter as tk
 def get_customer_info():
     """
     Display a single UI to get customer name, location, and checkboxes
-    for LO, CR, and PJM groups.
+    for Linguist, Customer Reviewer, and PJM groups.
     Returns:
         (customer_name, customer_location, lo_selected, cr_selected, pjm_selected)
     """
@@ -34,20 +34,20 @@ def get_customer_info():
     location_entry = tk.Entry(root, textvariable=location_var)
     location_entry.pack(pady=5)
 
-    # Checkboxes for LO, CR, PJM
+    # Checkboxes for Linguist, Customer Reviewer, PJM
     lo_var = tk.BooleanVar(value=False)
     cr_var = tk.BooleanVar(value=False)
     pjm_var = tk.BooleanVar(value=False)
 
-    tk.Checkbutton(root, text="Create LO Groups", variable=lo_var).pack(anchor="w", padx=10)
-    tk.Checkbutton(root, text="Create CR Groups", variable=cr_var).pack(anchor="w", padx=10)
-    tk.Checkbutton(root, text="Create PJM Group", variable=pjm_var).pack(anchor="w", padx=10)
+    tk.Checkbutton(root, text="Create Linguist Rows", variable=lo_var).pack(anchor="w", padx=10)
+    tk.Checkbutton(root, text="Create Customer Reviewer Rows", variable=cr_var).pack(anchor="w", padx=10)
+    tk.Checkbutton(root, text="Create PJM Row", variable=pjm_var).pack(anchor="w", padx=10)
 
     def on_ok():
         # On OK, just close the dialog
         root.destroy()
 
-    ok_button = tk.Button(root, text="Create Template", command=on_ok)
+    ok_button = tk.Button(root, text="OK", command=on_ok)
     ok_button.pack(pady=10)
 
     root.mainloop()
@@ -91,28 +91,28 @@ def export_to_excel():
         headers = ["Name", "Description", "Location", "Role"]
         ws.append(headers)
 
-        # For LO and CR groups: create rows for each selected language
+        # For Linguist and Customer Reviewer rows: create rows for each selected language
         for full_language_name, code in data.items():
-            # LO Groups
+            # Linguist Rows
             if lo_selected:
-                name_cell = f"{customer_name} {code} LO Group"
-                description_cell = f"{customer_name} {full_language_name} LO Group"
+                name_cell = f"{customer_name} {code} Linguist"
+                description_cell = f"{customer_name} {full_language_name} Linguist"
                 location_cell = customer_location
                 role_cell = "RWS Lead Translator"
                 ws.append([name_cell, description_cell, location_cell, role_cell])
 
-            # CR Groups
+            # Customer Reviewer Rows
             if cr_selected:
-                name_cell = f"{customer_name} {code} CR Group"
-                description_cell = f"{customer_name} {full_language_name} CR Group"
+                name_cell = f"{customer_name} {code} Customer Reviewer"
+                description_cell = f"{customer_name} {full_language_name} Customer Reviewer"
                 location_cell = customer_location
                 role_cell = "Customer Reviewer"
                 ws.append([name_cell, description_cell, location_cell, role_cell])
 
-        # PJM Group: Only 1 row total, no language info
+        # PJM Row: Only 1 row total, no language info
         if pjm_selected:
-            name_cell = f"{customer_name} RWS PJM Group"
-            description_cell = f"{customer_name} RWS PJM Group"
+            name_cell = f"{customer_name} RWS PJM"
+            description_cell = f"{customer_name} RWS PJM"
             location_cell = customer_location
             role_cell = "Project Manager"
             ws.append([name_cell, description_cell, location_cell, role_cell])
