@@ -3,25 +3,51 @@ import sys
 import json
 from openpyxl import Workbook
 import tkinter as tk
-from tkinter import simpledialog
 
 def get_customer_info():
     """
-    Display a simple UI to get customer name and location from the user.
+    Display a single UI to get both customer name and location from the user.
     Returns:
-        dict: Dictionary containing 'Customer Name' and 'Customer Location'.
+        (customer_name, customer_location): Both strings as entered by the user.
     """
+    # Create a custom dialog window
     root = tk.Tk()
-    root.withdraw()  # Hide the root window
+    root.title("Customer Information")
 
-    # Get inputs from the user
-    customer_name = simpledialog.askstring("Input", "Enter Customer Name:", parent=root)
-    customer_location = simpledialog.askstring("Input", "Enter Customer Location:", parent=root)
+    # Center the window on the screen
+    root.update_idletasks()
+    w = 300
+    h = 200
+    x = (root.winfo_screenwidth() // 2) - (w // 2)
+    y = (root.winfo_screenheight() // 2) - (h // 2)
+    root.geometry(f"{w}x{h}+{x}+{y}")
 
-    root.destroy()  # Destroy the root window
+    tk.Label(root, text="Customer Name:").pack(pady=(10,0))
+    name_var = tk.StringVar()
+    name_entry = tk.Entry(root, textvariable=name_var)
+    name_entry.pack(pady=5)
 
-    return {"Customer Name": customer_name, "Customer Location": customer_location}
+    tk.Label(root, text="Customer Location:").pack(pady=(10,0))
+    location_var = tk.StringVar()
+    location_entry = tk.Entry(root, textvariable=location_var)
+    location_entry.pack(pady=5)
 
+    # We'll store the inputs and close the window on OK
+    def on_ok():
+        root.quit()
+
+    ok_button = tk.Button(root, text="OK", command=on_ok)
+    ok_button.pack(pady=10)
+
+    # Wait for user input
+    root.mainloop()
+
+    # Get values before destroying the root
+    customer_name = name_var.get().strip()
+    customer_location = location_var.get().strip()
+
+    root.destroy()
+    return customer_name, customer_location
 
 def export_to_excel():
     try:
@@ -41,27 +67,32 @@ def export_to_excel():
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        # Get customer information from the user
-        customer_info = get_customer_info()
+        # Get customer information from the user (single window)
+        customer_name, customer_location = get_customer_info()
 
         # Create a new Excel workbook and worksheet
         wb = Workbook()
         ws = wb.active
         ws.title = "Selected Languages"
 
-        # Define headers: "Name", "Description", "Location", "Role"
+        # Headers
         headers = ["Name", "Description", "Location", "Role"]
         ws.append(headers)
 
-        # Populate the first row with customer info and consolidated roles
-        name = customer_info.get("Customer Name", "N/A")
-        location = customer_info.get("Customer Location", "N/A")
-        description = "Customer Language Preferences"
-        role = ", ".join(data.keys())  # Consolidate all selected languages into a single string
+        # For each selected language in data, create one row
+        # data: {full_language_name: code}
+        # Name = CustomerName + code + LO Group
+        # Description = CustomerName + full_language_name + LO Group
+        # Location = user input location
+        # Role = RWS Lead Translator
+        for full_language_name, code in data.items():
+            name_cell = f"{customer_name} {code} LO Group"
+            description_cell = f"{customer_name} {full_language_name} LO Group"
+            location_cell = customer_location
+            role_cell = "RWS Lead Translator"
 
-        # Write the first row
-        row = [name, description, location, role]
-        ws.append(row)
+            row = [name_cell, description_cell, location_cell, role_cell]
+            ws.append(row)
 
         # Save the workbook
         excel_filename = "selected_languages.xlsx"
@@ -83,7 +114,6 @@ def export_to_excel():
     except Exception as e:
         print(f"An error occurred: {e}")
         return 1
-
 
 if __name__ == "__main__":
     exit_code = export_to_excel()
