@@ -23,13 +23,13 @@ def get_customer_info():
     root.geometry(f"{w}x{h}+{x}+{y}")
 
     # Customer Name
-    tk.Label(root, text="Customer Name:").pack(pady=(10,0))
+    tk.Label(root, text="Customer Name:").pack(pady=(10, 0))
     name_var = tk.StringVar()
     name_entry = tk.Entry(root, textvariable=name_var)
     name_entry.pack(pady=5)
 
     # Customer Location
-    tk.Label(root, text="Customer Location:").pack(pady=(10,0))
+    tk.Label(root, text="Customer Location:").pack(pady=(10, 0))
     location_var = tk.StringVar()
     location_entry = tk.Entry(root, textvariable=location_var)
     location_entry.pack(pady=5)
@@ -39,9 +39,9 @@ def get_customer_info():
     cr_var = tk.BooleanVar(value=False)
     pjm_var = tk.BooleanVar(value=False)
 
-    tk.Checkbutton(root, text="Create Linguist Rows", variable=lo_var).pack(anchor="w", padx=10)
-    tk.Checkbutton(root, text="Create Customer Reviewer Rows", variable=cr_var).pack(anchor="w", padx=10)
-    tk.Checkbutton(root, text="Create PJM Row", variable=pjm_var).pack(anchor="w", padx=10)
+    tk.Checkbutton(root, text="Create LO Groups", variable=lo_var).pack(anchor="w", padx=10)
+    tk.Checkbutton(root, text="Create CR Groups", variable=cr_var).pack(anchor="w", padx=10)
+    tk.Checkbutton(root, text="Create PJM Group", variable=pjm_var).pack(anchor="w", padx=10)
 
     def on_ok():
         # On OK, just close the dialog
@@ -91,23 +91,26 @@ def export_to_excel():
         headers = ["Name", "Description", "Location", "Role"]
         ws.append(headers)
 
-        # For Linguist and Customer Reviewer rows: create rows for each selected language
-        for full_language_name, code in data.items():
-            # Linguist Rows
-            if lo_selected:
+        # Store rows for clarity: Linguist rows first, then Customer Reviewer rows, then PJM row
+        rows = []
+
+        # Linguist Rows
+        if lo_selected:
+            for full_language_name, code in data.items():
                 name_cell = f"{customer_name} {code} Linguist"
                 description_cell = f"{customer_name} {full_language_name} Linguist"
                 location_cell = customer_location
                 role_cell = "RWS Lead Translator"
-                ws.append([name_cell, description_cell, location_cell, role_cell])
+                rows.append([name_cell, description_cell, location_cell, role_cell])
 
-            # Customer Reviewer Rows
-            if cr_selected:
+        # Customer Reviewer Rows
+        if cr_selected:
+            for full_language_name, code in data.items():
                 name_cell = f"{customer_name} {code} Customer Reviewer"
                 description_cell = f"{customer_name} {full_language_name} Customer Reviewer"
                 location_cell = customer_location
                 role_cell = "Customer Reviewer"
-                ws.append([name_cell, description_cell, location_cell, role_cell])
+                rows.append([name_cell, description_cell, location_cell, role_cell])
 
         # PJM Row: Only 1 row total, no language info
         if pjm_selected:
@@ -115,7 +118,11 @@ def export_to_excel():
             description_cell = f"{customer_name} RWS PJM"
             location_cell = customer_location
             role_cell = "Project Manager"
-            ws.append([name_cell, description_cell, location_cell, role_cell])
+            rows.append([name_cell, description_cell, location_cell, role_cell])
+
+        # Write all rows to the worksheet
+        for row in rows:
+            ws.append(row)
 
         # Save the workbook
         excel_filename = "selected_languages.xlsx"
