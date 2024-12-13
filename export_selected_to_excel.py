@@ -98,7 +98,7 @@ def export_to_excel():
         if lo_selected:
             for full_language_name, code in data.items():
                 name_cell = f"{customer_name} {code} Linguist"
-                description_cell = f"{customer_name} {full_language_name} Linguist"
+                description_cell = f"{customer_name} {full_language_name} Linguist Group"
                 location_cell = customer_location
                 role_cell = "RWS Lead Translator"
                 rows.append([name_cell, description_cell, location_cell, role_cell])
@@ -106,8 +106,8 @@ def export_to_excel():
         # Customer Reviewer Rows
         if cr_selected:
             for full_language_name, code in data.items():
-                name_cell = f"{customer_name} {code} Customer Reviewer"
-                description_cell = f"{customer_name} {full_language_name} Customer Reviewer"
+                name_cell = f"{customer_name} {code} Reviewer"
+                description_cell = f"{customer_name} {full_language_name} Reviewer Group"
                 location_cell = customer_location
                 role_cell = "Customer Reviewer"
                 rows.append([name_cell, description_cell, location_cell, role_cell])
