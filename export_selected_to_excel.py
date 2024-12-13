@@ -47,7 +47,7 @@ def get_customer_info():
         # On OK, just close the dialog
         root.destroy()
 
-    ok_button = tk.Button(root, text="OK", command=on_ok)
+    ok_button = tk.Button(root, text="Create Template", command=on_ok)
     ok_button.pack(pady=10)
 
     root.mainloop()
